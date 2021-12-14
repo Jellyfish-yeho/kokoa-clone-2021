@@ -1,0 +1,35 @@
+.status-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    padding: 5px 3px;
+  }
+  .status-bar__column {
+    width: 33%;
+  }
+  .status-bar__column:first-child span {
+    margin-right: 5px;
+  }
+  /* 
+      * 요소를 정중앙, 맨우측에 위치하게 하기
+      => 부모에 width:33%, 
+      => 자식에 flex, justify-content center
+      => 자식에 flex, justify-content flex-end
+      (align-items center 하면 가운데로 모임)
+  */
+  .status-bar__column:nth-child(2) {
+    display: flex;
+    justify-content: center;
+  }
+  .status-bar__column:last-child {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .status-bar__column .fa-battery-full {
+    margin: 0px 5px;
+  }
+  

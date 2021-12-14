@@ -14,5 +14,31 @@
   justify-content: space-between;
 }
 .nav__link {
+  position: relative;
   color: #2e363e;
+}
+
+.nav__notification{
+  background-color: tomato;
+  width: 30px;
+  height: 30px;
+  /* 정사각형 => 원을 만들려면, width 나 height의 50% 값을 border-radius로 주면 됨 */
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+}
+.nav__notification-small{
+  width: 8px;
+  height: 8px;
+  background-color: tomato;
+  border-radius: 5px;
+  position: absolute;
+  top: -15px;
+  right: -10px;
 }
